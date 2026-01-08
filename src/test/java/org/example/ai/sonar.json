@@ -1,0 +1,533 @@
+{
+  "total": 15,
+  "p": 1,
+  "ps": 100,
+  "paging": {
+    "pageIndex": 1,
+    "pageSize": 100,
+    "total": 15
+  },
+  "effortTotal": 87,
+  "issues": [
+    {
+      "key": "AZXHCJ0Lj2lLO5c7o22w",
+      "rule": "java:S2142",
+      "severity": "MAJOR",
+      "component": "com.sf.gis:gis-ass-oms-mrs:mrs/mrs-service/src/main/java/com/sf/gis/mrs/service/impl/ShareTaskBaseServiceImpl.java",
+      "project": "com.sf.gis:gis-ass-oms-mrs",
+      "line": 522,
+      "hash": "e052a02c32ccb8c39d46d59c4bbdf794",
+      "textRange": {
+        "startLine": 522,
+        "endLine": 522,
+        "startOffset": 9,
+        "endOffset": 20
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "com.sf.gis:gis-ass-oms-mrs:mrs/mrs-service/src/main/java/com/sf/gis/mrs/service/impl/ShareTaskBaseServiceImpl.java",
+              "textRange": {
+                "startLine": 518,
+                "endLine": 518,
+                "startOffset": 12,
+                "endOffset": 17
+              },
+              "msg": "Method invocation throwing InterruptedException.",
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Either re-interrupt this method or rethrow the \"InterruptedException\" that can be caught here.",
+      "effort": "15min",
+      "debt": "15min",
+      "author": "zhangliyong998@sf-express.com",
+      "tags": [
+        "cwe",
+        "error-handling",
+        "multi-threading"
+      ],
+      "creationDate": "2025-02-27T21:03:29+0800",
+      "updateDate": "2025-03-24T15:11:33+0800",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZXHCJ0Lj2lLO5c7o22s",
+      "rule": "java:S125",
+      "severity": "MAJOR",
+      "component": "com.sf.gis:gis-ass-oms-mrs:mrs/mrs-service/src/main/java/com/sf/gis/mrs/service/impl/ShareTaskBaseServiceImpl.java",
+      "project": "com.sf.gis:gis-ass-oms-mrs",
+      "line": 362,
+      "hash": "046ed33a8f01afaef7cc92ea1d8d665b",
+      "textRange": {
+        "startLine": 362,
+        "endLine": 362,
+        "startOffset": 5,
+        "endOffset": 66
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "com.sf.gis:gis-ass-oms-mrs:mrs/mrs-service/src/main/java/com/sf/gis/mrs/service/impl/ShareTaskBaseServiceImpl.java",
+              "textRange": {
+                "startLine": 363,
+                "endLine": 363,
+                "startOffset": 5,
+                "endOffset": 60
+              },
+              "msg": "Code",
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "This block of commented-out lines of code should be removed.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "zhangliyong998@sf-express.com",
+      "tags": [
+        "unused"
+      ],
+      "creationDate": "2025-02-27T11:12:33+0800",
+      "updateDate": "2025-03-24T15:11:33+0800",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZXHCJ0Lj2lLO5c7o22v",
+      "rule": "java:S106",
+      "severity": "MAJOR",
+      "component": "com.sf.gis:gis-ass-oms-mrs:mrs/mrs-service/src/main/java/com/sf/gis/mrs/service/impl/ShareTaskBaseServiceImpl.java",
+      "project": "com.sf.gis:gis-ass-oms-mrs",
+      "line": 432,
+      "hash": "73122e3915a9fe731b4953519a034358",
+      "textRange": {
+        "startLine": 432,
+        "endLine": 432,
+        "startOffset": 2,
+        "endOffset": 12
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "zhangliyong998@sf-express.com",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ],
+      "creationDate": "2024-12-25T19:30:11+0800",
+      "updateDate": "2025-03-24T15:11:33+0800",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZXHCJ0Lj2lLO5c7o22t",
+      "rule": "java:S1172",
+      "severity": "MAJOR",
+      "component": "com.sf.gis:gis-ass-oms-mrs:mrs/mrs-service/src/main/java/com/sf/gis/mrs/service/impl/ShareTaskBaseServiceImpl.java",
+      "project": "com.sf.gis:gis-ass-oms-mrs",
+      "line": 367,
+      "hash": "f6e6b0eefbac95e3c2487906319fc02f",
+      "textRange": {
+        "startLine": 367,
+        "endLine": 367,
+        "startOffset": 44,
+        "endOffset": 52
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this unused method parameter \"statDate\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "zhangliyong998@sf-express.com",
+      "tags": [
+        "cert",
+        "unused"
+      ],
+      "creationDate": "2024-12-12T18:41:46+0800",
+      "updateDate": "2025-03-24T15:11:33+0800",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZXHCJ0Lj2lLO5c7o22u",
+      "rule": "java:S3252",
+      "severity": "CRITICAL",
+      "component": "com.sf.gis:gis-ass-oms-mrs:mrs/mrs-service/src/main/java/com/sf/gis/mrs/service/impl/ShareTaskBaseServiceImpl.java",
+      "project": "com.sf.gis:gis-ass-oms-mrs",
+      "line": 394,
+      "hash": "d33d3f41895deed30622e5dd37b78f27",
+      "textRange": {
+        "startLine": 394,
+        "endLine": 394,
+        "startOffset": 21,
+        "endOffset": 31
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use static access with \"cn.hutool.core.collection.CollUtil\" for \"isNotEmpty\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "zhangliyong998@sf-express.com",
+      "tags": [
+        "confusing"
+      ],
+      "creationDate": "2024-12-06T15:47:03+0800",
+      "updateDate": "2025-03-24T15:11:33+0800",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZXHCJ0Kj2lLO5c7o22m",
+      "rule": "java:S1612",
+      "severity": "MINOR",
+      "component": "com.sf.gis:gis-ass-oms-mrs:mrs/mrs-service/src/main/java/com/sf/gis/mrs/service/impl/ShareTaskBaseServiceImpl.java",
+      "project": "com.sf.gis:gis-ass-oms-mrs",
+      "line": 336,
+      "hash": "a798b16564b05abf25f5251ff94564ca",
+      "textRange": {
+        "startLine": 336,
+        "endLine": 336,
+        "startOffset": 32,
+        "endOffset": 34
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Replace this lambda with method reference 'Dict::getDictKey'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "zhangliyong998@sf-express.com",
+      "tags": [
+        "java8"
+      ],
+      "creationDate": "2024-11-29T17:34:11+0800",
+      "updateDate": "2025-03-24T15:11:33+0800",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZXHCJ0Kj2lLO5c7o22p",
+      "rule": "java:S3252",
+      "severity": "CRITICAL",
+      "component": "com.sf.gis:gis-ass-oms-mrs:mrs/mrs-service/src/main/java/com/sf/gis/mrs/service/impl/ShareTaskBaseServiceImpl.java",
+      "project": "com.sf.gis:gis-ass-oms-mrs",
+      "line": 355,
+      "hash": "76e84666ddb37119de2188c3a9473ba4",
+      "textRange": {
+        "startLine": 355,
+        "endLine": 355,
+        "startOffset": 20,
+        "endOffset": 24
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use static access with \"cn.hutool.core.collection.CollUtil\" for \"join\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "zhangliyong998@sf-express.com",
+      "tags": [
+        "confusing"
+      ],
+      "creationDate": "2024-11-29T17:34:11+0800",
+      "updateDate": "2025-03-24T15:11:33+0800",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZXHCJ0Lj2lLO5c7o22r",
+      "rule": "java:S3252",
+      "severity": "CRITICAL",
+      "component": "com.sf.gis:gis-ass-oms-mrs:mrs/mrs-service/src/main/java/com/sf/gis/mrs/service/impl/ShareTaskBaseServiceImpl.java",
+      "project": "com.sf.gis:gis-ass-oms-mrs",
+      "line": 359,
+      "hash": "13af0c60f4de9bc7a93b9ba4a00077c8",
+      "textRange": {
+        "startLine": 359,
+        "endLine": 359,
+        "startOffset": 20,
+        "endOffset": 24
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use static access with \"cn.hutool.core.collection.CollUtil\" for \"join\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "zhangliyong998@sf-express.com",
+      "tags": [
+        "confusing"
+      ],
+      "creationDate": "2024-11-29T17:34:11+0800",
+      "updateDate": "2025-03-24T15:11:33+0800",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZXHCJ0Kj2lLO5c7o22k",
+      "rule": "java:S3252",
+      "severity": "CRITICAL",
+      "component": "com.sf.gis:gis-ass-oms-mrs:mrs/mrs-service/src/main/java/com/sf/gis/mrs/service/impl/ShareTaskBaseServiceImpl.java",
+      "project": "com.sf.gis:gis-ass-oms-mrs",
+      "line": 301,
+      "hash": "9d1a0f9438c400bbd89e0dbb461b6db8",
+      "textRange": {
+        "startLine": 301,
+        "endLine": 301,
+        "startOffset": 21,
+        "endOffset": 28
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use static access with \"cn.hutool.core.collection.CollUtil\" for \"isEmpty\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "zhangliyong998@sf-express.com",
+      "tags": [
+        "confusing"
+      ],
+      "creationDate": "2024-11-29T17:18:53+0800",
+      "updateDate": "2025-03-24T15:11:33+0800",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZXHCJ0Kj2lLO5c7o22l",
+      "rule": "java:S3252",
+      "severity": "CRITICAL",
+      "component": "com.sf.gis:gis-ass-oms-mrs:mrs/mrs-service/src/main/java/com/sf/gis/mrs/service/impl/ShareTaskBaseServiceImpl.java",
+      "project": "com.sf.gis:gis-ass-oms-mrs",
+      "line": 323,
+      "hash": "e0ea2b27a6007d96931d09403b61f1d7",
+      "textRange": {
+        "startLine": 323,
+        "endLine": 323,
+        "startOffset": 23,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use static access with \"cn.hutool.core.collection.CollUtil\" for \"isEmpty\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "zhangliyong998@sf-express.com",
+      "tags": [
+        "confusing"
+      ],
+      "creationDate": "2024-11-29T17:18:53+0800",
+      "updateDate": "2025-03-24T15:11:33+0800",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZXHCJ0Kj2lLO5c7o22n",
+      "rule": "java:S3252",
+      "severity": "CRITICAL",
+      "component": "com.sf.gis:gis-ass-oms-mrs:mrs/mrs-service/src/main/java/com/sf/gis/mrs/service/impl/ShareTaskBaseServiceImpl.java",
+      "project": "com.sf.gis:gis-ass-oms-mrs",
+      "line": 337,
+      "hash": "553d71f5396ad62300d0d5c48cf4734c",
+      "textRange": {
+        "startLine": 337,
+        "endLine": 337,
+        "startOffset": 21,
+        "endOffset": 28
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use static access with \"cn.hutool.core.collection.CollUtil\" for \"isEmpty\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "zhangliyong998@sf-express.com",
+      "tags": [
+        "confusing"
+      ],
+      "creationDate": "2024-11-29T17:18:53+0800",
+      "updateDate": "2025-03-24T15:11:33+0800",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZXHCJ0Kj2lLO5c7o22o",
+      "rule": "java:S3252",
+      "severity": "CRITICAL",
+      "component": "com.sf.gis:gis-ass-oms-mrs:mrs/mrs-service/src/main/java/com/sf/gis/mrs/service/impl/ShareTaskBaseServiceImpl.java",
+      "project": "com.sf.gis:gis-ass-oms-mrs",
+      "line": 353,
+      "hash": "a001caeedc910a668af340e1222717b3",
+      "textRange": {
+        "startLine": 353,
+        "endLine": 353,
+        "startOffset": 21,
+        "endOffset": 31
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use static access with \"cn.hutool.core.collection.CollUtil\" for \"isNotEmpty\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "zhangliyong998@sf-express.com",
+      "tags": [
+        "confusing"
+      ],
+      "creationDate": "2024-11-29T17:18:53+0800",
+      "updateDate": "2025-03-24T15:11:33+0800",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZXHCJ0Kj2lLO5c7o22q",
+      "rule": "java:S3252",
+      "severity": "CRITICAL",
+      "component": "com.sf.gis:gis-ass-oms-mrs:mrs/mrs-service/src/main/java/com/sf/gis/mrs/service/impl/ShareTaskBaseServiceImpl.java",
+      "project": "com.sf.gis:gis-ass-oms-mrs",
+      "line": 357,
+      "hash": "33c07de83b64eb307506bead2834b67b",
+      "textRange": {
+        "startLine": 357,
+        "endLine": 357,
+        "startOffset": 21,
+        "endOffset": 31
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use static access with \"cn.hutool.core.collection.CollUtil\" for \"isNotEmpty\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "zhangliyong998@sf-express.com",
+      "tags": [
+        "confusing"
+      ],
+      "creationDate": "2024-11-29T17:18:53+0800",
+      "updateDate": "2025-03-24T15:11:33+0800",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZXHCJ0Kj2lLO5c7o22j",
+      "rule": "java:S1186",
+      "severity": "CRITICAL",
+      "component": "com.sf.gis:gis-ass-oms-mrs:mrs/mrs-service/src/main/java/com/sf/gis/mrs/service/impl/ShareTaskBaseServiceImpl.java",
+      "project": "com.sf.gis:gis-ass-oms-mrs",
+      "line": 127,
+      "hash": "a3b877e9b7158f8869f58a21cf1c3476",
+      "textRange": {
+        "startLine": 127,
+        "endLine": 127,
+        "startOffset": 13,
+        "endOffset": 32
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "zhangliyong998@sf-express.com",
+      "tags": [
+        "suspicious"
+      ],
+      "creationDate": "2024-11-19T18:26:03+0800",
+      "updateDate": "2025-03-24T15:11:33+0800",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZXHCJ0Kj2lLO5c7o22i",
+      "rule": "java:S1066",
+      "severity": "MAJOR",
+      "component": "com.sf.gis:gis-ass-oms-mrs:mrs/mrs-service/src/main/java/com/sf/gis/mrs/service/impl/ShareTaskBaseServiceImpl.java",
+      "project": "com.sf.gis:gis-ass-oms-mrs",
+      "line": 233,
+      "hash": "8672aa5b1935060a877d3e0f8d8c7e31",
+      "textRange": {
+        "startLine": 233,
+        "endLine": 233,
+        "startOffset": 4,
+        "endOffset": 6
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "com.sf.gis:gis-ass-oms-mrs:mrs/mrs-service/src/main/java/com/sf/gis/mrs/service/impl/ShareTaskBaseServiceImpl.java",
+              "textRange": {
+                "startLine": 232,
+                "endLine": 232,
+                "startOffset": 3,
+                "endOffset": 5
+              },
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Merge this if statement with the enclosing one.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "zhangliyong998@sf-express.com",
+      "tags": [
+        "clumsy"
+      ],
+      "creationDate": "2024-11-19T18:26:03+0800",
+      "updateDate": "2025-03-24T15:11:33+0800",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    }
+  ],
+  "components": [
+    {
+      "key": "com.sf.gis:gis-ass-oms-mrs:mrs/mrs-service/src/main/java/com/sf/gis/mrs/service/impl/ShareTaskBaseServiceImpl.java",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "ShareTaskBaseServiceImpl.java",
+      "longName": "mrs/mrs-service/src/main/java/com/sf/gis/mrs/service/impl/ShareTaskBaseServiceImpl.java",
+      "path": "mrs/mrs-service/src/main/java/com/sf/gis/mrs/service/impl/ShareTaskBaseServiceImpl.java"
+    },
+    {
+      "key": "com.sf.gis:gis-ass-oms-mrs",
+      "enabled": true,
+      "qualifier": "TRK",
+      "name": "gis-ass-oms-mrs",
+      "longName": "gis-ass-oms-mrs"
+    }
+  ],
+  "facets": []
+}

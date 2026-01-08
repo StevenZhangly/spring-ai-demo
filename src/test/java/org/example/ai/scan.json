@@ -1,0 +1,182 @@
+[
+  {
+    "source": "SONARQUBE",
+    "type": "BUG",
+    "line": 522,
+    "description": "Either re-interrupt this method or rethrow the \"InterruptedException\" that can be caught here.",
+    "severity": "MAJOR",
+    "suggestions": null
+  },
+  {
+    "source": "SONARQUBE",
+    "type": "CODE_SMELL",
+    "line": 394,
+    "description": "Use static access with \"cn.hutool.core.collection.CollUtil\" for \"isNotEmpty\".",
+    "severity": "CRITICAL",
+    "suggestions": null
+  },
+  {
+    "source": "SONARQUBE",
+    "type": "CODE_SMELL",
+    "line": 362,
+    "description": "This block of commented-out lines of code should be removed.",
+    "severity": "MAJOR",
+    "suggestions": null
+  },
+  {
+    "source": "SONARQUBE",
+    "type": "CODE_SMELL",
+    "line": 353,
+    "description": "Use static access with \"cn.hutool.core.collection.CollUtil\" for \"isNotEmpty\".",
+    "severity": "CRITICAL",
+    "suggestions": null
+  },
+  {
+    "source": "SONARQUBE",
+    "type": "CODE_SMELL",
+    "line": 233,
+    "description": "Merge this if statement with the enclosing one.",
+    "severity": "MAJOR",
+    "suggestions": null
+  },
+  {
+    "source": "SONARQUBE",
+    "type": "CODE_SMELL",
+    "line": 432,
+    "description": "Replace this use of System.out or System.err by a logger.",
+    "severity": "MAJOR",
+    "suggestions": null
+  },
+  {
+    "source": "SONARQUBE",
+    "type": "CODE_SMELL",
+    "line": 355,
+    "description": "Use static access with \"cn.hutool.core.collection.CollUtil\" for \"join\".",
+    "severity": "CRITICAL",
+    "suggestions": null
+  },
+  {
+    "source": "SONARQUBE",
+    "type": "CODE_SMELL",
+    "line": 367,
+    "description": "Remove this unused method parameter \"statDate\".",
+    "severity": "MAJOR",
+    "suggestions": null
+  },
+  {
+    "source": "SONARQUBE",
+    "type": "CODE_SMELL",
+    "line": 301,
+    "description": "Use static access with \"cn.hutool.core.collection.CollUtil\" for \"isEmpty\".",
+    "severity": "CRITICAL",
+    "suggestions": null
+  },
+  {
+    "source": "SONARQUBE",
+    "type": "CODE_SMELL",
+    "line": 323,
+    "description": "Use static access with \"cn.hutool.core.collection.CollUtil\" for \"isEmpty\".",
+    "severity": "CRITICAL",
+    "suggestions": null
+  },
+  {
+    "source": "SONARQUBE",
+    "type": "CODE_SMELL",
+    "line": 357,
+    "description": "Use static access with \"cn.hutool.core.collection.CollUtil\" for \"isNotEmpty\".",
+    "severity": "CRITICAL",
+    "suggestions": null
+  },
+  {
+    "source": "DEEPSEEK",
+    "type": "CODE_SMELL",
+    "line": 368,
+    "description": "main 方法中的测试代码可能不适合保留在生产环境中。",
+    "severity": "MINOR",
+    "suggestions": [
+      "将测试代码移除，或将其迁移到专门的单元测试类中。"
+    ]
+  },
+  {
+    "source": "SONARQUBE",
+    "type": "CODE_SMELL",
+    "line": 336,
+    "description": "Replace this lambda with method reference 'Dict::getDictKey'.",
+    "severity": "MINOR",
+    "suggestions": null
+  },
+  {
+    "source": "SONARQUBE",
+    "type": "CODE_SMELL",
+    "line": 127,
+    "description": "Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.",
+    "severity": "CRITICAL",
+    "suggestions": null
+  },
+  {
+    "source": "SONARQUBE",
+    "type": "CODE_SMELL",
+    "line": 359,
+    "description": "Use static access with \"cn.hutool.core.collection.CollUtil\" for \"join\".",
+    "severity": "CRITICAL",
+    "suggestions": null
+  },
+  {
+    "source": "SONARQUBE",
+    "type": "CODE_SMELL",
+    "line": 337,
+    "description": "Use static access with \"cn.hutool.core.collection.CollUtil\" for \"isEmpty\".",
+    "severity": "CRITICAL",
+    "suggestions": null
+  },
+  {
+    "source": "DEEPSEEK",
+    "type": "PERFORMANCE",
+    "line": 348,
+    "description": "getShareTaskExecuteRecord 方法中存在多次数据库查询操作，可能导致性能瓶颈。",
+    "severity": "MAJOR",
+    "suggestions": [
+      "优化查询逻辑，例如通过批量查询减少数据库访问次数。"
+    ]
+  },
+  {
+    "source": "DEEPSEEK",
+    "type": "CODE_SMELL",
+    "line": 107,
+    "description": "cancelShareTaskBase 方法中 startAfterShareDataDelete 调用时直接拆分 seqNo 字符串，缺乏对输入格式的验证。",
+    "severity": "MINOR",
+    "suggestions": [
+      "增加对 seqNo 格式的校验，确保其符合预期格式。"
+    ]
+  },
+  {
+    "source": "DEEPSEEK",
+    "type": "PERFORMANCE",
+    "line": 279,
+    "description": "在方法 checkCustomShareRatio 中，totalRatio 的值未被使用，可能导致性能浪费。",
+    "severity": "MAJOR",
+    "suggestions": [
+      "移除未使用的 totalRatio 计算逻辑，或确保其结果被正确使用。"
+    ]
+  },
+  {
+    "source": "DEEPSEEK",
+    "type": "CODE_SMELL",
+    "line": 307,
+    "description": "startShareTask 方法中捕获 Exception 并仅记录日志，可能掩盖潜在问题。",
+    "severity": "MINOR",
+    "suggestions": [
+      "考虑更细粒度的异常处理，或提供额外的上下文信息以便排查问题。"
+    ]
+  },
+  {
+    "source": "DEEPSEEK",
+    "type": "SECURITY",
+    "line": 154,
+    "description": "exportDetailData 方法中直接将用户输入的 seqNo 参数用于查询，可能存在 SQL 注入风险。",
+    "severity": "CRITICAL",
+    "suggestions": [
+      "使用参数化查询或 ORM 框架的安全机制来防止 SQL 注入。"
+    ]
+  }
+]
