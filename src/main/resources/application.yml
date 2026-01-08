@@ -7,7 +7,4 @@ spring:
 
   ai:
     dashscope:
-      api-key: sk-2f532ec8e9da47ab9d5d97ee0d3ae5c5
-      #openai:
-      #api-key: sk-56f00e6a08864c4da264ca9346b7d1f6
-      #base-url: https://api.deepseek.com
+      api-key: 
